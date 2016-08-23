@@ -7,11 +7,43 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="leds">
 
-    <TextView
+    <Button
+        android:id="@+id/myButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="led on/off" />
+        android:layout_gravity="center_horizontal"
+        android:text="led off" />
+
+    <CheckBox
+    android:id="@+id/checkbox1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:text="LED1"/>
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="LED2"/>
+
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="LED3"/>
+
+    <CheckBox
+        android:id="@+id/checkbox4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="LED4"/>
+
 
 </LinearLayout>
