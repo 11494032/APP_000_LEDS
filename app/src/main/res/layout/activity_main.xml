@@ -18,17 +18,19 @@
         android:text="led off" />
 
     <CheckBox
-    android:id="@+id/checkbox1"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal"
-    android:text="LED1"/>
+        android:id="@+id/checkbox1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onCheckboxClicked"
+        android:text="LED1"/>
 
     <CheckBox
         android:id="@+id/checkbox2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:onClick="onCheckboxClicked"
         android:text="LED2"/>
 
     <CheckBox
@@ -36,6 +38,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:onClick="onCheckboxClicked"
         android:text="LED3"/>
 
     <CheckBox
@@ -43,6 +46,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:onClick="onCheckboxClicked"
         android:text="LED4"/>
 
 
