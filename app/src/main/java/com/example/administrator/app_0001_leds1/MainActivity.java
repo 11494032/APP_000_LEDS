@@ -12,6 +12,8 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import com.example.administrator.hardlibrary.*;
+
 public class MainActivity extends AppCompatActivity {
     private Button button_onoff;
 
@@ -20,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox checkBoxLed3;
     private CheckBox checkBoxLed4;
     private boolean leds_on = false;
+
+
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -30,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         button_onoff = (Button) findViewById(R.id.myButton);
 
@@ -44,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 leds_on = !leds_on;
                 if (leds_on) {
                     button_onoff.setText("on");
+
                    Toast.makeText(getApplicationContext(), "leds on", Toast.LENGTH_SHORT).show();
                 }
                 else {
