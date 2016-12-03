@@ -1,6 +1,6 @@
 package com.example.administrator.hardlibrary;
 
-public  class LedControl
+public class LedControl
 {
     public static native int ledOpen( );
     public static native void ledClose( );
@@ -10,6 +10,7 @@ public  class LedControl
     {
         try {
             System.loadLibrary("hardcontrol");
+
         } catch (Exception e) {
             e.printStackTrace();
         }

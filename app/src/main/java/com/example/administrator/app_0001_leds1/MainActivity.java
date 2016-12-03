@@ -1,13 +1,12 @@
 package com.example.administrator.app_0001_leds1;
 
 import android.net.Uri;
+import android.widget.Toast;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.Toast;
-
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -19,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     private CheckBox checkBoxLed1;
     private CheckBox checkBoxLed2;
+
     private CheckBox checkBoxLed3;
     private CheckBox checkBoxLed4;
     private boolean leds_on = false;
@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        LedControl.ledCtl(0,1);
 
         button_onoff = (Button) findViewById(R.id.myButton);
 
